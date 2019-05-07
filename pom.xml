@@ -65,6 +65,7 @@
 						<Bundle-Vendor>Karl Hammar</Bundle-Vendor>
 						<Import-Package>
 							org.protege.editor.owl.*;version="5.0.0", <!-- equivalent to [4.3,infinity) -->
+							org.semanticweb.owlapi.*;version="[5.0.5)",
 							*
 						</Import-Package>
 						<Embed-Dependency>

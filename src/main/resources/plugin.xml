@@ -15,10 +15,15 @@
 
 	<!-- Views -->
 	
-	<extension id="CoMoDIDEView" point="org.protege.editor.core.application.ViewComponent">
+	<extension id="RenderingView" point="org.protege.editor.core.application.ViewComponent">
+		<label value="Rendering View" />
+		<class value="com.karlhammar.xdp.views.RendererView" />
+		<headerColor value="@org.protege.ontologycolor"/>
+	</extension>
+    
+    <extension id="CoMoDIDEView" point="org.protege.editor.core.application.ViewComponent">
 		<label value="CoMoDIDE View" />
 		<class value="com.karlhammar.xdp.views.CoMoDIDEView" />
 		<headerColor value="@org.protege.ontologycolor"/>
 	</extension>
-    
 </plugin>
