@@ -80,6 +80,9 @@ public class ComodideEditor extends BasicGraphEditor
         coreConstructsPalette // subclass
                 .addTemplate("Subclass", new ImageIcon(ComodideEditor.class.getResource("/images/arrow.png")), 
                 		new SubClassEdgeCell());
+        coreConstructsPalette // nesting?
+        		.addTemplate("Module", new ImageIcon(ComodideEditor.class.getResource("/images/swimlane.png")),
+        				"swimlane", 500, 500, "Container");
         
         // Factory for creating templates
         OWLDataFactory df = OWLManager.getOWLDataFactory();
